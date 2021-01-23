@@ -1,0 +1,23 @@
+﻿<Window x:Class="Echarnus.Material.Hamburger.TestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Echarnus.Material.Hamburger.TestApp" xmlns:hamburger="clr-namespace:Echarnus.Material.Hamburger;assembly=Echarnus.Material.Hamburger"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <hamburger:HamburgerMenu Background="Blue" MenuBackground="Red" MenuIconBackground="Black" MenuIconForeground="White">
+            <hamburger:HamburgerMenu.HamburgerContent>
+                <Label>Hello World</Label>
+            </hamburger:HamburgerMenu.HamburgerContent>
+        </hamburger:HamburgerMenu>
+    </Grid>
+    
+    
+</Window>
